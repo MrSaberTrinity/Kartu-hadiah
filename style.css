@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-image: url(kontol.gif);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Segoe UI;
+}
+
+.foto{
+    max-width: 100px;
+}
+
+.konten{
+    width: 300px;
+    margin: 50px auto;
+    perspective: 600px;
+}
+
+.kartu-1{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.kartu-2{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.kartu-1.flipped{
+    transform: rotateY(180deg);
+}
+
+.kartu-2.flipped{
+    transform: rotateY(180deg);
+}
+
+.tampilan{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+.depan{
+    background-color: #AF175C;
+    box-shadow: 10px 10px 5px #732A48;
+    color: white;
+}
+
+.belakang{
+    background-color: #1B4CB0;
+    box-shadow: 10px 10px 5px #203767;
+    color: white;
+    transform: rotateY(180deg);
+}
